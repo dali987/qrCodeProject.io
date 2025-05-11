@@ -1,3 +1,4 @@
+/* removing the default margins and paddings nad changing some stuff*/
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/*using the body for centering the card with flex*/
 body{
     display: flex;
     justify-content: center;
@@ -14,27 +16,32 @@ body{
     width: 100%;
 }
 
+
 .container{
     width: 25%;
+    min-width: 300px; /*making sure it doesnt go under 300 pixels (instead of using media queries)*/
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: hsl(0, 0%, 100%);
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.101);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.101); /* the slight shadow to make it standout*/
     padding: 10px;
     padding-bottom: 40px;
-    border-radius: 3%;
+    border-radius: 3%; /* rounding the corners a bit*/
 }
 
+/* image styling*/
 img{
     margin: 10px;
     border-radius: 3%;
+    /*auto generated stuff from vs code*/
     -webkit-border-radius: 3%;
     -moz-border-radius: 3%;
     -ms-border-radius: 3%;
     -o-border-radius: 3%;
 }
 
+/* styling the headline*/
 h1{
     text-align: center;
     font-size: 1.6rem;
@@ -44,6 +51,7 @@ h1{
     margin: 10px 20px;
 }
 
+/* styling the paragraphe under the headline*/
 p{
     text-align: center;
     font-weight: 400;
