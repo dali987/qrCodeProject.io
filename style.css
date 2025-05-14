@@ -20,7 +20,7 @@ body{
 
 .container{
     width: 100%;
-    max-width: 325px; /*making sure it doesnt go under 300 pixels (instead of using media queries)*/
+    max-width: 200px; /*making sure it doesnt go over 325 pixels (instead of using media queries)*/
     display: flex;
     justify-content: center;
     flex-direction: column;
